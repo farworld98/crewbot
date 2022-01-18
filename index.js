@@ -10,7 +10,7 @@ nocache('./welcome.js', module => console.log(`'${module}' Updated!`))
 
 async function starts() {
     const denz = new WAConnection()
-    denz.version = [2, 2119, 6]
+    denz.version = [2, 2140, 12]
     denz.on('qr', qr => {
         qrcode.generate(qr, { small: true })
         console.log(`[ ${time} ] Scan Pack`)
